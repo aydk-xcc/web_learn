@@ -1,12 +1,12 @@
 {
   "pages":[
-    "pages/index/index",
-    "pages/loading/loading"
+    "pages/loading/loading",
+    "pages/index/index"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "web前端进化之路",
     "navigationBarTextStyle":"black"
   }
 }
