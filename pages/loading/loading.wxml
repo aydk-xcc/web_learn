@@ -1,2 +1,12 @@
-<!--pages/loading/loading.wxml-->
-<text>pages/loading/loading.wxml</text>
+<view class="header">
+  <view class='timer'> 3秒进入</view>
+</view>
+<image style='width:180px;height:180px;margin-top:40px;' src='../images/logo.png' />
+<!-- <view class="logo">
+  <view class='js_circle'>J S</view>
+  <view class='logo_bottom'>
+    <view class='html_circle'>HTML</view>
+    <view class='css_circle'>CSS</view>
+  </view>
+</view> -->
+<button open-type='getUserInfo' bindgetuserinfo="bindGetUserInfo" class='btn'>开启进化之旅</button>
