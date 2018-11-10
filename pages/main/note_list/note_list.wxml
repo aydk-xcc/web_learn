@@ -1,0 +1,34 @@
+<view wx:if="{{dataList.length>0}}" class='add_btn' hover-class="save_hover" bindtap="addNotes"><image src='../../images/add_note.png' style='width:20px;height:20px;' /></view>
+<view class='item' wx:if="{{dataList.length>0}}" wx:for="{{dataList}}">
+  <view class='header' bindtouchstart='touchView' bindtouchend='touchView' data-index="{{index}}">
+    {{item.title}}
+    <image src='../../images/right.png' style='width:20px;height:20px;margin-right:12px;{{item.status?"transform:rotateZ(90deg);":""}}' />
+  </view>
+  <view class='content' wx:if="{{item.status}}">
+    <view class='tag_edit' wx:if="{{item.note_tags&&item.note_tags.length>0}}">
+      <view></view>
+    </view>
+    <view style='padding:20px 0px;color:#3c3c3c'>
+      {{item.content}}
+    </view>
+    <view class='bottom'>
+      <view>{{item.updatedAt}}</view>
+      <view class="edit" bindtap='editNotes' data-index='{{index}}'>
+        <image src='../../images/edit.png' style='width:18px;height:18px;margin-right:4px;' />
+        编辑
+      </view>
+    </view>
+  </view>
+</view>
+<view class='start_note' bindtap='addNotes' wx:if="{{dataList.length==0}}">
+  开始前端随笔吧
+</view>
+<view class='screen' wx:if="{{isAdd}}"  bindtap="changeShow"></view>
+<view class="model" wx:if="{{isAdd}}">
+  <view class='model_title'>添加分类</view>
+  <input placeholder='写下你的笔记分类吧(限20字)...' maxlength='20' value='{{title}}' bindinput='_inputTitle' style='margin:8px 0px;' />
+  <view style='display:flex;justify-content: space-around;margin:18px 0px 0px 8px;'>
+    <view class='cancle' hover-class='save_hover'  bindtap="changeShow">取消</view>
+    <view class='save' hover-class="save_hover" bindtap="saveClass">保存</view>
+  </view>
+</view>

@@ -1,0 +1,8 @@
+<view class='add_btn' hover-class="save_hover" bindtap="saveNotes"><image src='../../images/save.png' style='width:20px;height:20px;' /></view>
+<view class='header'>
+  <input class='input_title' bindinput='inputView' data-type='0' value='{{title}}' placeholder='标题...' />
+  <view class='input_class_bg' bindtap='choseClass'>
+    <view class="input_class">分类</view>
+  </view>
+</view>
+<textarea class='content' bindinput='inputView' data-type='1' value='{{content}}' placeholder='内容...' />

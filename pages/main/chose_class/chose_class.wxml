@@ -1,0 +1,3 @@
+<view class='item' wx:if="{{dataList.length>0}}" wx:for="{{dataList}}" bindtap="choseClass" data-index="{{index}}">
+  {{item.title}}
+</view>

@@ -1,0 +1,12 @@
+<view class='header'>
+  <image src='{{userInfo.userPic?userInfo.userPic:"../../images/logo.png"}}' />
+  <view wx:if="{{userInfo.nickName}}">{{userInfo.nickName}}</view>
+  <button wx:else class='btn'open-type='getUserInfo' bindgetuserinfo="bindGetUserInfo">点击获取昵称头像</button>
+</view>
+<view class="item" bindtap='suggest'>建议反馈
+<image src='../../images/right.png' /></view>
+<view class="item" bindtap='about'>关于我们<image src='../../images/right.png' /></view>
+<view class="sign">
+  <view>进化之路 V1.0.0</view>
+  <view style='margin-top:4px;'>欢迎你来，一起进步@暗影刀客</view>
+</view>

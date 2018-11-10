@@ -1,0 +1,26 @@
+page{
+  background-color: #f0f0f0;
+  font-size: 32rpx;
+}
+.item{
+  display: flex;
+  width: 100%;
+  padding: 12px;
+  background-color: white;
+  box-sizing: border-box;
+  margin-top: 50px;
+  flex-direction: column;
+}
+.item_top{
+  display: flex;
+  justify-content: space-between;
+}
+.inputView{
+  display: inline-block;
+  background-color: #f0f0f0;
+  height: 45px;
+  padding: 0px 8px;
+  box-sizing: border-box;
+  color: #8a8a8a;
+  margin: 12px 0px;
+}

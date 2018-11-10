@@ -1,0 +1,5 @@
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <input placeholder="联系方式：qq、微信或者手机号(非必选)" class="timer" name="input" value='{{info.title}}' bindinput='input_title' />
+  <textarea class="content" maxlength="-1" placeholder="建议描述（要说的详细一点哦）" name="textarea" value='{{info.content}}'  bindinput='input_content' />
+  <button class='submit_btn' hover-class='press' formType="submit">提交</button>
+</form>
