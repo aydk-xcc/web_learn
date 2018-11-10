@@ -1,0 +1,63 @@
+/**index.wxss**/
+page{
+  display: flex;
+  justify-content: flex-start;
+  background-color: #f0f0f0;
+}
+.item{
+  display: flex;
+  width: 100%;
+  background-color: white;
+  flex-direction: column;
+  margin-top: 8px;
+  padding:0px 8px;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 4px #cdcdcd;
+}
+.header{
+  display: flex;
+  width: 100%;
+  height: 60px;
+  background-color: white;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+  padding:0px 8px;
+  box-sizing: border-box;
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-top: 1px #cdcdcd solid;
+}
+.tag_edit{
+  display: flex;
+  height: 30px;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.bottom{
+  padding: 8px 0px;
+  color: #8a8a8a;
+  font-size: 28rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.edit{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.start_note{
+  padding: 4px 12px;
+  background-color: white;
+  color: #8a8a8a;
+  box-shadow: 2px 2px 4px #cdcdcd;
+  margin-top: 80%;
+}
+.save_hover{
+  opacity: 0.8;
+}

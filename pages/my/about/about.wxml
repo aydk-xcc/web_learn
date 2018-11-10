@@ -1,0 +1,14 @@
+<view class="item">
+  <view class='item_top'>
+    项目开源地址
+    <view bindtap='copy' data-type="0">复制</view>
+  </view>
+  <input class='inputView' disabled='true' value='{{gitUrl}}' />
+</view>
+<view class='item'>
+  <view class='item_top'>
+    项目博客地址
+    <view bindtap='copy' data-type="1">复制</view>
+  </view>
+  <input class='inputView' disabled='true' value='{{csdnUrl}}' />
+</view>

@@ -1,12 +1,33 @@
 {
   "pages":[
     "pages/loading/loading",
-    "pages/index/index"
+    "pages/main/index/index",
+    "pages/main/note_list/note_list",
+    "pages/main/chose_class/chose_class",
+    "pages/main/add_notes/add_notes",
+    "pages/my/index/index",
+    "pages/my/suggest/suggest",
+    "pages/my/about/about"
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
+    "navigationBarBackgroundColor": "#DEA681",
     "navigationBarTitleText": "web前端进化之路",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "color": "#8a8a8a",
+    "selectedColor": "#DEA681",
+    "list": [{
+      "pagePath": "pages/main/index/index",
+      "text": "主页",
+      "iconPath": "pages/images/home.png",
+      "selectedIconPath": "pages/images/home_c.png"
+    },{
+      "pagePath": "pages/my/index/index",
+      "text": "我的",
+      "iconPath": "pages/images/my.png",
+      "selectedIconPath": "pages/images/my_c.png"
+    }]
   }
 }

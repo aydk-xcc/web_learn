@@ -1,0 +1,17 @@
+<view wx:if="{{dataList.length>0}}" class='add_btn' hover-class="save_hover" bindtap="changeShow">+</view>
+<view class='item' wx:if="{{dataList.length>0}}" wx:for="{{dataList}}" bindtouchstart='touchView' bindtouchend='touchView' data-index="{{index}}">
+  {{item.title}}
+  <view style='margin-right:80px;color:#DEA681;'>{{item.num?item.num:0}} 篇心得</view>
+</view>
+<view class='start_note' bindtap='changeShow' wx:if="{{dataList.length==0}}">
+  创建分类
+</view>
+<view class='screen' wx:if="{{isAdd}}"  bindtap="changeShow"></view>
+<view class="model" wx:if="{{isAdd}}">
+  <view class='model_title'>添加分类</view>
+  <input placeholder='写下你的笔记分类吧(限20字)...' maxlength='20' value='{{title}}' bindinput='_inputTitle' style='margin:8px 0px;' />
+  <view style='display:flex;justify-content: space-around;margin:18px 0px 0px 8px;'>
+    <view class='cancle' hover-class='save_hover'  bindtap="changeShow">取消</view>
+    <view class='save' hover-class="save_hover" bindtap="saveClass">保存</view>
+  </view>
+</view>

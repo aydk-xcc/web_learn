@@ -1,5 +1,5 @@
 <view class="header">
-  <view class='timer'> 3秒进入</view>
+  <view class='timer' wx:if="{{isLogin}}"> {{alarmState}}秒进入</view>
 </view>
 <image style='width:180px;height:180px;margin-top:40px;' src='../images/logo.png' />
 <!-- <view class="logo">
@@ -9,4 +9,5 @@
     <view class='css_circle'>CSS</view>
   </view>
 </view> -->
-<button open-type='getUserInfo' bindgetuserinfo="bindGetUserInfo" class='btn'>开启进化之旅</button>
+<button wx:if="{{!isLogin}}" open-type='getUserInfo' bindgetuserinfo="bindGetUserInfo" class='btn'>开启进化之旅</button>
+<button wx:else class='btn' bindtap='goindex'>立刻进入</button>
